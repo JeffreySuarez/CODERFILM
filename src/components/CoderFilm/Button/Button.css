@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: transparent;
   overflow: hidden;
   border: none;
   border-radius: 30px;

@@ -1,9 +1,10 @@
 import React from "react";
+import "./Peliculas.css";
 import ItemListContainer from "../../components/ItemListContainer";
 
 const Peliculas = () => {
   return (
-    <div>
+    <div className="content-peliculas">
       <ItemListContainer />
     </div>
   );

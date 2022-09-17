@@ -4,7 +4,7 @@ import "./ItemListContainer.css";
 import ItemList from "../ItemList";
 import Data from "../../api/api.json";
 import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import Filter from "../Filter";
 import { useParams } from "react-router-dom";
 
 const index = () => {
@@ -31,20 +31,7 @@ const index = () => {
 
   return (
     <div className="content-itemListContainer">
-      <div>
-        <h2>Filtrar por:</h2>
-        <NavLink to="/CoderFilm/Peliculas">Todo</NavLink>
-        <NavLink to="/CoderFilm/Peliculas/category/accion/accion">
-          Acción
-        </NavLink>
-        <NavLink to="/CoderFilm/Peliculas/category/marvel/marvel">
-          Marvel
-        </NavLink>
-        <NavLink to="/CoderFilm/Peliculas/category/terror/terror">
-          Terror
-        </NavLink>
-      </div>
-
+      <Filter />
       <ItemList datosFilm={data} />
     </div>
   );

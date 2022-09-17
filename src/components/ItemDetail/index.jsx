@@ -15,9 +15,10 @@ const ItemDetail = ({ data }) => {
     addProduct(data, cantidad);
   };
   return (
-    <div className="container">
+    <div className="content-itemdetail">
       <div className="detail">
         <img className="detail__img" src={data.thumbnail} alt={data.title} />
+
         <div className="content">
           <h1>{data.title}</h1>
           {gotoCart ? (
@@ -27,6 +28,7 @@ const ItemDetail = ({ data }) => {
           )}
         </div>
       </div>
+      <div className="separador" />
     </div>
   );
 };

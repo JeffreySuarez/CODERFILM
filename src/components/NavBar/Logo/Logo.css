@@ -1,0 +1,36 @@
+.content-logo-menu{
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+
+}
+
+.button-logo{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.button-logo h1{
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 40px;
+    
+}
+
+.logo-left{
+    color: yellow;
+}
+
+.logo-right{
+    color: white;
+}
+
+.link-logo{
+    text-decoration: none;
+}

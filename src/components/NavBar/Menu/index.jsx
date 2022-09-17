@@ -4,13 +4,13 @@ import "./Menu.css";
 
 const Menu = () => {
   return (
-    <div>
+    <div className="content-menu">
       <ul className="lista-menu">
         <NavLink className="menu" to="/CoderFilm">
-          HOME
+          <i className="fas fa-house-user "></i>
         </NavLink>
         <NavLink className="menu" to="/CoderFilm/Peliculas">
-          PELICULAS
+          <i className="fas fa-film "></i>
         </NavLink>
       </ul>
     </div>

@@ -1,3 +1,29 @@
-.menu{
-    padding: 0px 5px 0px 5px;
+.content-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 100px;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  color: yellow;
+  transition: all .3s ease-in-out;
+}
+
+.menu:hover {
+  scale: calc(1.5);
+}
+
+.lista-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

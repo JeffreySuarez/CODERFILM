@@ -1,0 +1,32 @@
+.content-cartwidget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.logo-carrito{
+    color: yellow;
+ 
+}
+
+
+.carrito{
+    position: absolute;
+    
+}
+
+.div-span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -30px;
+    right: -15px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 10px;
+    border-radius: 50%;
+}

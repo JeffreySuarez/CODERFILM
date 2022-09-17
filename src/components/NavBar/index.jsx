@@ -6,7 +6,7 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <div className="container">
+    <div className="content-navbar">
       <Logo />
       <Menu />
       <CartWidget />
