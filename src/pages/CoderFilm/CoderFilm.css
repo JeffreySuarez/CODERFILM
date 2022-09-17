@@ -1,0 +1,18 @@
+
+
+
+.content-coderfilm{
+
+    background: linear-gradient(
+    to top right,
+    rgba(0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.2)
+  ),
+  url("https://i.ibb.co/DghY8zW/fondo.jpg");
+background-size: cover;
+width: 100%;
+height: 100vh;
+position: absolute;
+}
+
+
