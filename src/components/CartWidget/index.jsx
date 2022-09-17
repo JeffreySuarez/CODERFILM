@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const CartWidget = () => {
   return (
     <div>
-      <Link to={"/"}>
+      <NavLink to="/CoderFilm/cart">
         <i className="fas fa-shopping-cart"></i>
-      </Link>
+      </NavLink>
     </div>
   );
 };

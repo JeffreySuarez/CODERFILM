@@ -1,7 +1,12 @@
 import React from "react";
+import ItemListContainer from "../../components/ItemListContainer";
 
 const Peliculas = () => {
-  return <div>Peliculas</div>;
+  return (
+    <div>
+      <ItemListContainer />
+    </div>
+  );
 };
 
 export default Peliculas;
