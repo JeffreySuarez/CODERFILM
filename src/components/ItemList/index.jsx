@@ -4,7 +4,7 @@ import "./ItemList.css";
 
 const ItemList = ({ datosFilm = [] }) => {
   return (
-    <div className="content">
+    <div className="content-itemlist">
       {datosFilm.map((el) => {
         return <Item element={el} key={el.id} />;
       })}

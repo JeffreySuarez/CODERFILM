@@ -1,9 +1,8 @@
 import React from "react";
-import ItemListContainer from "../../components/ItemListContainer";
-
+import "./Home.css";
 const Home = () => {
   return (
-    <div className="content">
+    <div className="content-Home">
       <h1>Home</h1>
     </div>
   );
