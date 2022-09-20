@@ -21,7 +21,7 @@ const CartProvider = ({ children }) => {
   const clearCart = () => setCart([]);
 
   //funcion para remover el producto del carrito
-  const removeProduct = () => {
+  const removeProduct = (id) => {
     setCart(cart.filter((product) => product.id !== id));
   };
   //vamos a setear el carrito y todos los productos que no sean ese id se mostraran.  creara un array que mostrara todos los productos que no tengan ese id
@@ -36,7 +36,7 @@ const CartProvider = ({ children }) => {
     setCart(newCart);
   };
 
-  console.log("carrito : " + JSON.stringify(cart));
+  console.log("carrito : " + cart);
 
   /*
   
@@ -51,11 +51,41 @@ const CartProvider = ({ children }) => {
 
   //tendra la logica para no aceptar duplicados
 
+  //funcion para calcular el precio total.  el total price nos dice el precio total, usaremos una funcion reduce para los arrays.
+  // basicamente va acumulando la suma de los precios.
+
+  const initialValueTotalPrice = 0;
+
+  const totalPrice = () => {
+    return cart.reduce(
+      (prev, act) => prev + act.cantidad * act.price,
+      initialValueTotalPrice
+    );
+  };
+
+  console.log("precio total : $" + totalPrice());
+
+  const initialValueTotalProduct = 0;
+
+  const totalProduct = () => {
+    return cart.reduce(
+      (acumulador, productoActual) => acumulador + productoActual.cantidad,
+      initialValueTotalProduct
+    );
+  };
+
+  console.log(totalProduct());
+
+  //para saber cuantos productos tengo en el cartwidget realizo otro reduce como el anterior.
+
   const context = {
     clearCart,
     isInCart,
     removeProduct,
     addProduct,
+    totalPrice,
+    totalProduct,
+    cart,
   };
 
   return (

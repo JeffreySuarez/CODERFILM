@@ -6,6 +6,7 @@ import Data from "../../api/api.json";
 import { useEffect } from "react";
 import Filter from "../Filter";
 import { useParams } from "react-router-dom";
+import Loading from "../Loading";
 
 const index = () => {
   const [data, setData] = useState([]);
@@ -32,6 +33,7 @@ const index = () => {
   return (
     <div className="content-itemListContainer">
       <Filter />
+
       <ItemList datosFilm={data} />
     </div>
   );

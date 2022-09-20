@@ -21,11 +21,17 @@ const ItemDetail = ({ data }) => {
 
         <div className="content">
           <h1>{data.title}</h1>
-          {gotoCart ? (
-            <Link to="/CoderFilm/cart">Terminar Compra</Link>
-          ) : (
-            <ItemCount initial={1} stock={10} onAdd={onAdd} />
-          )}
+          <p>{data.description}</p>
+          <p>Hay un stock de: {data.stock}</p>
+          <p>El precio es: $ {data.price}</p>
+
+          <div className="contentItemCount">
+            {gotoCart ? (
+              <Link to="/CoderFilm/cart">Terminar Compra</Link>
+            ) : (
+              <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
+            )}
+          </div>
         </div>
       </div>
       <div className="separador" />
