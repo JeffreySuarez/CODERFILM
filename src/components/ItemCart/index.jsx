@@ -7,7 +7,7 @@ const index = ({ product }) => {
 
   return (
     <div className="itemCart">
-      <img src={product.thumbnail} alt={product.title} />
+      <img src={product.imagen} alt={product.title} />
       <div>
         <p>Titulo: {product.title}</p>
         <p>Cantidad: {product.cantidad}</p>
