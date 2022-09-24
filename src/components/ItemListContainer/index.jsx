@@ -71,7 +71,7 @@ const index = () => {
   return (
     <div className="content-itemListContainer">
       <Filter />
-
+      {/* {!data ? <Loading /> : <ItemList datosFilm={data} />} */}
       <ItemList datosFilm={data} />
     </div>
   );

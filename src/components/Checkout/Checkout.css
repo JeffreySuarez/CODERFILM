@@ -1,0 +1,116 @@
+.content-checkout {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.content-checkout-formulario {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid yellow;
+  border-radius: 10px ;
+}
+
+h1 {
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content-checkout-form {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-div {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.form-div input {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.checkout-botton {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border: 3px solid black;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+  background-color: yellow;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.checkout-botton:hover {
+  background-color: black;
+  color: yellow;
+  border: 3px solid yellow;
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+    padding: 5px;
+}
+.exito{
+    color: greenyellow;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.content-titulo1{
+    
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.checkout-title1{
+    display: flex;
+    align-items: center;
+   height: auto;
+    color: white;
+   
+}
+
+.linkSeguirComprando{
+    text-decoration: none;
+    font-size: 30px;
+    border: 3px solid black;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+    border-radius: 30px;
+    transition: all .5s ease-in-out ;
+
+}
+.linkSeguirComprando:hover{
+    background-color: black;
+    color: yellow;
+    border: 3px solid yellow;
+}

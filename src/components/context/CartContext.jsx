@@ -86,6 +86,7 @@ const CartProvider = ({ children }) => {
     totalPrice,
     totalProduct,
     cart,
+    setCart,
   };
 
   return (

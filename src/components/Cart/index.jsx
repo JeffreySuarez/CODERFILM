@@ -28,6 +28,7 @@ const Cart = () => {
         return <ItemCart key={product.id} product={product} />;
       })}
       <p>total : $ {totalPrice()}</p>
+      <Link to="/CoderFilm/checkout">Terminar Compra</Link>
     </div>
   );
 };

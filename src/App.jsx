@@ -7,6 +7,7 @@ import Peliculas from "./pages/Peliculas";
 import Cart from "./components/Cart";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import { CartProvider } from "./components/context/CartContext";
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               path="detalle/:detalleID"
               element={<ItemDetailContainer />}
             />
+            <Route path="checkout" element={<Checkout />} />
           </Route>
         </Routes>
       </CartProvider>
