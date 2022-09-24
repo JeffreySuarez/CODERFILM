@@ -32,6 +32,7 @@
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     flex: 1;
     width: 100%;
     height: 700px;
@@ -40,6 +41,7 @@
         rgba(0, 0, 0) 20%,
         rgba(0, 0, 0, 0.2)
       );
+    padding: 30px;
 }
 
 .separador{
@@ -53,4 +55,55 @@ background-color: yellow;
     align-items: flex-start;
     justify-content: flex-start;
     margin: 0px;
+}
+
+.content-title-detail{
+    font-family:cursive;
+    color: yellow;
+    letter-spacing: 2px;
+    font-size: 40px;
+  
+
+}
+
+.content-description-detail{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.content-footer-detail{
+    display: flex;
+    flex-direction: column;
+   
+    font-size: 25px;
+}
+
+.content-stock-detail{
+    margin: 20px 0px 20px 0px;
+}
+
+.content-span{
+    color: yellow;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.LinkTerminarCompra{
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid black;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+    border-radius: 30px;
+    transition: all .5s ease-in-out ;
+
+}
+.LinkTerminarCompra:hover{
+    background-color: black;
+    color: yellow;
+    border: 3px solid yellow;
 }

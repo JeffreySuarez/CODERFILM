@@ -20,14 +20,26 @@ const ItemDetail = ({ data }) => {
         <img className="detail__img" src={data.imagen} alt={data.title} />
 
         <div className="content">
-          <h1>{data.title}</h1>
-          <p>{data.description}</p>
-          <p>Hay un stock de: {data.stock}</p>
-          <p>El precio es: $ {data.price}</p>
+          <div className="content-header-detail">
+            <h1 className="content-title-detail">{data.title}</h1>
+            <p className="content-description-detail">{data.description}</p>
+          </div>
+
+          <div className="content-footer-detail">
+            <p className="content-stock-detail">
+              Stock: <span className="content-span"> {data.stock}</span>
+            </p>
+            <p className="content-price-detail">
+              Precio:
+              <span className="content-span"> $ {data.price}</span>
+            </p>
+          </div>
 
           <div className="contentItemCount">
             {gotoCart ? (
-              <Link to="/CoderFilm/cart">Terminar Compra</Link>
+              <Link className="LinkTerminarCompra" to="/CoderFilm/cart">
+                Terminar Compra
+              </Link>
             ) : (
               <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
             )}

@@ -23,12 +23,18 @@ const Cart = () => {
   console.log("Estos son los productos de productCart: " + cart);
 
   return (
-    <div>
+    <div className="content-cart">
       {cart.map((product) => {
         return <ItemCart key={product.id} product={product} />;
       })}
-      <p>total : $ {totalPrice()}</p>
-      <Link to="/CoderFilm/checkout">Terminar Compra</Link>
+      <div className="content-footer-cart">
+        <p>
+          Total: <span> $ {totalPrice()} </span>
+        </p>
+        <Link className="LinkTerminarCompra" to="/CoderFilm/checkout">
+          Terminar Compra
+        </Link>
+      </div>
     </div>
   );
 };

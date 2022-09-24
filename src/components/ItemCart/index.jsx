@@ -8,13 +8,27 @@ const index = ({ product }) => {
   return (
     <div className="itemCart">
       <img src={product.imagen} alt={product.title} />
-      <div>
-        <p>Titulo: {product.title}</p>
-        <p>Cantidad: {product.cantidad}</p>
-        <p>Precio unidad : {product.price}</p>
-        <p>Subtotal: ${product.cantidad * product.price}</p>
+      <div className="content-itemCart">
+        <p>
+          Titulo: <span> {product.title}</span>
+        </p>
+        <p>
+          Cantidad: <span>{product.cantidad}</span>
+        </p>
+        <p>
+          Precio unidad: <span> $ {product.price}</span>
+        </p>
+        <p>
+          Subtotal: <span> $ {product.cantidad * product.price}</span>
+        </p>
         {/* Usaremos la funcion para eliminar el producto con el context */}
-        <button onClick={() => removeProduct(product.id)}>Eliminar</button>
+
+        <button
+          className="button-itemCart"
+          onClick={() => removeProduct(product.id)}
+        >
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
     </div>
   );
