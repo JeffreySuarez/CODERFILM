@@ -46,9 +46,9 @@ const Checkout = () => {
 
   // console.log(totalPrice);
 
-  const enviarFirebase = ({ name, email }) => {
+  const enviarFirebase = ({ name, email, phone }) => {
     const order = {
-      buyer: { name, email },
+      buyer: { name, email, phone },
 
       items: cart.map((product) => ({
         id: product.id,
@@ -73,7 +73,7 @@ const Checkout = () => {
       initialValues={{
         name: "",
         email: "",
-        // numberCell: "",
+        phone: "",
       }}
       validate={(valores) => {
         let errores = {};
@@ -95,6 +95,14 @@ const Checkout = () => {
         ) {
           errores.email =
             "El email solo puede contener letras, numeros, puntos, guiones y guion bajo.";
+        }
+
+        //validacion para el input de phone
+        if (!valores.phone) {
+          errores.phone =
+            "por favor ingresa el numero de contacto con el indicativo del pais seguido del numero de celular";
+        } else if (!/^[+|5|7|-][0-9]{13}$/.test(valores.phone)) {
+          errores.phone = "El phone solo puede contener numeros.";
         }
 
         return errores;
@@ -165,19 +173,22 @@ const Checkout = () => {
                     )}
                   </div>
 
-                  {/* <div className="form-div">
-                    <label htmlFor="numberCell">CellPhone:</label>
+                  <div className="form-div">
+                    <label htmlFor="phone">Phone:</label>
                     <input
-                      id="numberCell"
-                      name="numberCell"
+                      id="phone"
+                      name="phone"
                       type="text"
-                      value={values.numberCell}
-                      placeholder="numero de contacto"
+                      value={values.phone}
+                      placeholder="+57-3127629854"
                       onChange={handleChange}
                       onBlur={handleBlur}
                       // onChange={(e) => setNumberCell(e.target.value)}
                     />
-                  </div> */}
+                    {touched.phone && errors.phone && (
+                      <div className="error">{errors.phone}</div>
+                    )}
+                  </div>
 
                   <button
                     type="submit"
