@@ -1,36 +1,70 @@
-.content-cartwidget{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+.content-cartwidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
-.logo-carrito{
-    color: yellow;
-
- 
+.logo-carrito {
+  color: yellow;
 }
 
-
-.carrito{
-    position: absolute;
-    
+.carrito {
+  position: absolute;
 }
 
-.div-span{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -30px;
-    right: -15px;
-    width: 20px;
-    height: 20px;
-    /* background-color: red; */
-    color: white;
-    /* background-color: rgb(255, 255, 255);
+.div-span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  right: -15px;
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+  color: white;
+  /* background-color: rgb(255, 255, 255);
     color: black; */
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 50%;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 850px) {
+    .content-cartwidget {
+     
+        flex: 0.5;
+      }
+}
+
+@media only screen and (max-width: 650px) {
+
+
+
+}
+@media only screen and (max-width: 550px) {
+.carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: none;
+}
+.div-span {
+
+top: -15px;
+right: 0px;
+
+}
+
+.content-cartwidget {
+
+    justify-content: none;
+
+
+  }
+  
+
+
 }

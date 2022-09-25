@@ -1,21 +1,21 @@
 .content-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   font-size: 30px;
   text-decoration: none;
   padding: 0px 5px 0px 5px;
   cursor: pointer;
   color: yellow;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu:hover {
@@ -26,4 +26,23 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+}
+
+@media only screen and (max-width: 650px) {
+  .content-menu {
+    
+    justify-content: end;
+    
+    
+  }
+}
+@media only screen and (max-width: 550px) {
+.menu{
+  font-size: 25px;
+  width: 50px;
+  justify-content: center;
+}
 }

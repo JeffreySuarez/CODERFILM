@@ -14,6 +14,7 @@ const index = () => {
           Soy un alumno de CODERHOUSE y este es mi proyecto final de React JS
         </p>
       </div>
+      <hr />
       <div className="footer-mid">
         <h3 className="footer-mid-subtitulo">DESARROLLADOR</h3>
         <div className="footer-img">
@@ -21,6 +22,7 @@ const index = () => {
         </div>
         <p>CODERHOUSE Comision : 34730 - 2022</p>
       </div>
+      <hr />
       <div className="footer-right">
         <h1>
           <span className="logo-left">CODER</span>

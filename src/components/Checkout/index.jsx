@@ -3,8 +3,14 @@ import { useCartContext } from "../context/CartContext";
 import "./Checkout.css";
 import { Formik } from "formik";
 //importamos firebase
-import { addDoc, collection, getFirestore } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  getFirestore,
+  updateDoc,
+} from "firebase/firestore";
 import { Link } from "react-router-dom";
+
 const Checkout = () => {
   const { totalPrice, cart, setCart } = useCartContext();
 
@@ -63,6 +69,10 @@ const Checkout = () => {
     const db = getFirestore();
     const orders = collection(db, "orders");
     addDoc(orders, order).then(({ id }) => setOrderID(id));
+    const orderDoc = doc(film, "85O1WFWj53tqEtIkUzpU");
+    updateDoc(orderDoc, {
+      stock: order.items.cantidad - stock,
+    });
 
     console.log(order);
     setCart([]);
