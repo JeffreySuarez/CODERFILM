@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
+import Foto from "./foto.jpeg";
 
 const index = () => {
   return (
@@ -18,7 +19,7 @@ const index = () => {
       <div className="footer-mid">
         <h3 className="footer-mid-subtitulo">DESARROLLADOR</h3>
         <div className="footer-img">
-          <img src="../../../public/foto.jpeg" alt="" />
+          <img src={Foto} alt="" />
         </div>
         <p>CODERHOUSE Comision : 34730 - 2022</p>
       </div>

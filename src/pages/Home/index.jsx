@@ -49,7 +49,7 @@ const Home = () => {
             </Textoslide>
           </Slide>
         </SlideShow>
-        <Titulo>Productos destacados</Titulo>
+        <Titulo>Peliculas Destacadas</Titulo>
         <SlideShow>
           <Slide tamaño="300px">
             <Link>
