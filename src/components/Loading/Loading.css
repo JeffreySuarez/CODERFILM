@@ -19,8 +19,8 @@
     width: 300px;
     height: 300px;
     border: 10px solid black;
-    border-top-color: yellow;
-    border-bottom-color: yellow;
+    border-top-color: aqua;
+    border-bottom-color: aqua;
     border-radius: 50%;
     animation: loading 1s ease infinite;
   

@@ -6,7 +6,7 @@
 }
 
 .logo-carrito {
-  color: yellow;
+  color: aqua;
 }
 
 .carrito {
@@ -37,10 +37,7 @@
         flex: 0.5;
       }
 }
-
 @media only screen and (max-width: 650px) {
-
-
 
 }
 @media only screen and (max-width: 550px) {
@@ -57,14 +54,9 @@ top: -15px;
 right: 0px;
 
 }
-
 .content-cartwidget {
 
     justify-content: none;
-
-
   }
-  
-
 
 }

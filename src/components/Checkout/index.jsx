@@ -69,10 +69,6 @@ const Checkout = () => {
     const db = getFirestore();
     const orders = collection(db, "orders");
     addDoc(orders, order).then(({ id }) => setOrderID(id));
-    const orderDoc = doc(film, "85O1WFWj53tqEtIkUzpU");
-    updateDoc(orderDoc, {
-      stock: order.items.cantidad - stock,
-    });
 
     console.log(order);
     setCart([]);

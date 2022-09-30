@@ -1,76 +1,59 @@
-.content-logo{
- 
-    display: flex;
-    position: relative;
-    top: 50%;
-    left: 10%;
-    width: 80%;
+.content-logo {
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 10%;
+  width: 80%;
 }
 
-.logo{
-    padding: 0px;
-    margin: 0px;
+.logo {
+  padding: 0px;
+  margin: 0px;
 }
 
-.left{
-    width: 100%;
-    font-weight: bold;
-    font-family: roboto;
-    font-size: 4em;
-    font-style: italic;
-    color: Yellow; 
+.left {
+  width: 100%;
+  font-weight: bold;
+  font-family: roboto;
+  font-size: 4em;
+  font-style: italic;
+  color: aqua;
 }
 
-.right{
-    width: 100%;
-    font-weight: bold;
-    font-family: roboto;
-    color: white;
-    font-size: 4em;
-    font-style: italic;
+.right {
+  width: 100%;
+  font-weight: bold;
+  font-family: roboto;
+  color: white;
+  font-size: 4em;
+  font-style: italic;
 }
-
 
 @media only screen and (max-width: 850px) {
-   
-.left{
- 
+  .left {
     font-size: 3em;
-    
-}
-
-.right{
-
-    font-size: 3em;
- 
-}
   }
 
-  @media only screen and (max-width: 650px) {
-   
-    .left{
-     
-        font-size: 2em;
-        
-    }
-    
-    .right{
-    
-        font-size: 2em;
-     
-    }
-      }
-      @media only screen and (max-width: 400px) {
-   
-        .left{
-         
-            font-size: 1.5em;
-            
-        }
-        
-        .right{
-        
-            font-size: 1.5em;
-         
-        }
-          }
+  .right {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .left {
+    font-size: 2em;
+  }
+
+  .right {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .left {
+    font-size: 1.5em;
+  }
+
+  .right {
+    font-size: 1.5em;
+  }
+}

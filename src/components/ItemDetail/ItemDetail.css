@@ -47,7 +47,7 @@
 .separador{
     width: 100%;
     height: 5px;
-background-color: yellow;
+background-color: aqua;
 }
 
 .contentItemCount{
@@ -59,7 +59,7 @@ background-color: yellow;
 
 .content-title-detail{
     font-family:cursive;
-    color: yellow;
+    color: aqua;
     letter-spacing: 2px;
     font-size: 40px;
   
@@ -84,7 +84,7 @@ background-color: yellow;
 }
 
 .content-span{
-    color: yellow;
+    color: aqua;
     font-family: cursive;
     font-weight: bold;
     font-size: 30px;
@@ -97,13 +97,13 @@ background-color: yellow;
     padding: 10px;
     font-weight: bold;
     color: black;
-    background-color: yellow;
+    background-color: aqua;
     border-radius: 30px;
     transition: all .5s ease-in-out ;
 
 }
 .LinkTerminarCompra:hover{
     background-color: black;
-    color: yellow;
-    border: 3px solid yellow;
+    color: aqua;
+    border: 3px solid aqua;
 }

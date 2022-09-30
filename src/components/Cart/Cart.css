@@ -23,13 +23,13 @@
   padding: 10px;
   font-weight: bold;
   color: black;
-  background-color: yellow;
+  background-color: aqua;
   border-radius: 30px;
 }
 .linkSeguirComprando:hover {
   background-color: black;
-  color: yellow;
-  border: 3px solid yellow;
+  color: aqua;
+  border: 3px solid aqua;
 }
 
 .content-cart {
@@ -51,7 +51,7 @@
 
 }
 .content-footer-cart p span{
-    color: yellow;
+    color: aqua;
     font-family: cursive;
     font-weight: bold ;
 }

@@ -22,7 +22,7 @@
   width: 55px;
   height: 55px;
   border-radius: 30px;
-  background-color: yellow;
+  background-color: aqua;
   border-radius: 50%;
   z-index: 1;
 }
@@ -52,7 +52,7 @@ h4 {
   position: absolute;
   width: 100%;
   height: 150px;
-  background-color: yellow;
+  background-color: aqua;
   top: -50%;
   left: -100%;
   transition: 0.3s;

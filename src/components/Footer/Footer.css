@@ -32,7 +32,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 5px solid yellow;
+  border: 5px solid aqua;
   overflow: hidden;
   position: absolute;
 }
@@ -82,7 +82,11 @@
 }
 
 .list-menu-menu {
-  border-left: 4px solid yellow;
+  border-left: 4px solid aqua;
+}
+
+hr{
+  height: 80%;
 }
 
 
