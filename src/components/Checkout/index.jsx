@@ -107,7 +107,7 @@ const Checkout = () => {
         if (!valores.phone) {
           errores.phone =
             "por favor ingresa el numero de contacto con el indicativo del pais seguido del numero de celular";
-        } else if (!/^[+|5|7|-][0-9]{13}$/.test(valores.phone)) {
+        } else if (!/^[+|5|7|][0-9]{12}$/.test(valores.phone)) {
           errores.phone = "El phone solo puede contener numeros.";
         }
 
@@ -186,7 +186,7 @@ const Checkout = () => {
                       name="phone"
                       type="text"
                       value={values.phone}
-                      placeholder="+57-3127629854"
+                      placeholder="+573127629854"
                       onChange={handleChange}
                       onBlur={handleBlur}
                       // onChange={(e) => setNumberCell(e.target.value)}
